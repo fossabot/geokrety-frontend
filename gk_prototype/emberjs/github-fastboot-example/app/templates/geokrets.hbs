@@ -1,0 +1,9 @@
+<!-- possible todo: use controller, view! -->
+<div class="jumbo">
+  <div class="right"></div>
+  <h2>{{model.meta.count}} geokret{{#if (compare model.meta.count '>' 1)}}s{{/if}}</h2>
+  <!-- component to show data -->
+  {{#each model.data as |geokret|}}
+	{{geokret-list gk=geokret}}
+  {{/each}}
+</div>

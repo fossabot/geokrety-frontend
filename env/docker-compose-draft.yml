@@ -1,0 +1,12 @@
+# src:  https://stackoverflow.com/questions/41423349/docker-how-to-set-up-apache-php-in-docker-compose-yml
+# another examples: https://www.metal3d.org/ticket/docker-apache-mysql-php
+version: '2'
+services:
+    apache2:
+# following line causes docker-compose to build image using ./Dockerfile
+        build: .
+        volumes:
+            - /app:/app
+        ports:
+            - 80:80
+            - 443:443
