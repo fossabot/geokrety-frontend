@@ -1,0 +1,24 @@
+# EmberJS
+
+## references
+
+frontend https://www.emberjs.com/ framework 
+ and https://www.ember-fastboot.com/ extension.
+
+Example Open Event Server
+See:
+* https://github.com/fossasia/open-event-server
+* https://github.com/fossasia/open-event-frontend
+* blog https://blog.fossasia.org/category/open-event/
+
+## Steps
+- https://www.ember-fastboot.com/quickstart
+	npm install ember-cli -g
+				+ ember-cli@3.0.0
+				added 652 packages in 128.687s
+	ember new github-fastboot-example
+		(16 min! / disk storage for node_modules: 381 Mo)
+	cd github-fastboot-example
+	ember install ember-fetch
+	ember generate route index
+	update  app/routes/index.js + app/templates/*.hbs
