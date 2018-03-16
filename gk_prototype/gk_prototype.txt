@@ -17,8 +17,15 @@ See:
 				+ ember-cli@3.0.0
 				added 652 packages in 128.687s
 	ember new github-fastboot-example
-		(16 min! / disk storage for node_modules: 381 Mo)
+		(16 min! / disk storage for node_modules: 381 Mo)
 	cd github-fastboot-example
 	ember install ember-fetch
 	ember generate route index
 	update  app/routes/index.js + app/templates/*.hbs
+
+## CORS issue
+
+ With EmberJS, how to call remove ReST endpoint with CORS security constraint
+     https://stackoverflow.com/questions/30651223/configure-embers-back-end-to-communicate-with-a-restful-service
+    solution: need to specify one remote service to proxify: cf ./DEV_serve.sh
+        TODO: what about production?

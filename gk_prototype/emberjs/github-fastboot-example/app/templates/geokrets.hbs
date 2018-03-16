@@ -1,0 +1,14 @@
+> geokrets.hbs
+
+<p>
+  Where: {{model.where}}<br/>
+  Count: {{model.count}}<br/>
+
+  features:<br/>
+  {{#each model.featureCollection as |feature|}}
+    <div style="float: left">{{{feature.properties.popupContent}}}</div>
+  {{/each}}
+</p>
+<!-- possible todo: use controller, view! -->
+
+{{outlet}}
