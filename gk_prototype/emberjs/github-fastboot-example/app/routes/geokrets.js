@@ -19,7 +19,7 @@ export default Route.extend({
     var gklist = fetch(geojsonUri)
                         .then(function(response) {
                                 Logger.info('response', response);
-                                return { "where": "Grenoble centre",
+                                return { "where": "Grenoble",
                                          "featureCollection": response.features,
                                          "count": response.features.length} ;
                              })

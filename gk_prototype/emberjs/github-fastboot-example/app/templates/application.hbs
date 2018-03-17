@@ -1,8 +1,23 @@
-<h2>Welcome to Geokret EmberJS prototype</h2>
-<nav>
-  {{#link-to "index"}}home{{/link-to}}
-  - {{#link-to "gitlabuser"}}gitlabuser{{/link-to}}
-  - {{#link-to "geokrets"}}geokrets{{/link-to}}
-</nav>
-<hr/>
-{{outlet}}
+<div class="container">
+  <div class="menu">
+    {{#link-to "index"}}
+      <h1>
+        <em>Geokrety</em>
+      </h1>
+    {{/link-to}}
+    <div class="links">
+      {{#link-to "about" class="menu-about"}}
+        About
+      {{/link-to}}
+	  {{#link-to "contact" class="menu-contact"}}
+        contact
+      {{/link-to}}
+      {{#link-to "geokrets" class="menu-geokrets"}}
+        geokrets
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>

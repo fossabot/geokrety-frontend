@@ -13,6 +13,7 @@ See:
 
 ## Steps
 - https://www.ember-fastboot.com/quickstart
+
 	npm install ember-cli -g
 				+ ember-cli@3.0.0
 				added 652 packages in 128.687s
@@ -23,6 +24,9 @@ See:
 	ember generate route index
 	update  app/routes/index.js + app/templates/*.hbs
 
+- https://guides.emberjs.com/v3.0.0/tutorial/
+	ember install ember-cli-tutorial-style
+	
 ## CORS issue
 
  With EmberJS, how to call remove ReST endpoint with CORS security constraint

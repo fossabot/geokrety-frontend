@@ -1,14 +1,9 @@
-> geokrets.hbs
-
-<p>
-  Where: {{model.where}}<br/>
-  Count: {{model.count}}<br/>
-
-  features:<br/>
-  {{#each model.featureCollection as |feature|}}
-    <div style="float: left">{{{feature.properties.popupContent}}}</div>
-  {{/each}}
-</p>
 <!-- possible todo: use controller, view! -->
-
-{{outlet}}
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>{{model.count}} geokrets from {{model.where}}</h2>
+  <!-- component to show featureItem -->
+  {{#each model.featureCollection as |featureItem|}}
+	{{geokret-list-feature feature=featureItem}}
+  {{/each}}
+</div>

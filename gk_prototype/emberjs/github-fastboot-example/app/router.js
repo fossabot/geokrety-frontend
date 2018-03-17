@@ -9,6 +9,8 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('gitlabuser');
   this.route('geokrets');
+  this.route('contact');
+  this.route('about');
 });
 
 export default Router;

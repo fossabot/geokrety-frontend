@@ -1,4 +1,13 @@
-h1 {
- font-size: 12pt;
- background-color: lightyellow;
+.gk-list {
+	display: block; 
+	padding: 10px; 
+	margin: 10px; 
+	float: left;
+	min-width: 300px;
+	border: 1px solid grey;
+}
+
+.gk-list h1 {
+	font-size: 12pt;
+	background-color: lightyellow;
 }
