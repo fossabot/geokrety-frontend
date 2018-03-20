@@ -26,6 +26,9 @@ See:
 
 - https://guides.emberjs.com/v3.0.0/tutorial/
 	ember install ember-cli-tutorial-style
+
+- http://www.ember-cli-mirage.com/docs/v0.1.x/installation/ (mock api json)
+	ember install ember-cli-mirage
 	
 ## CORS issue
 

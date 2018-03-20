@@ -5,4 +5,8 @@
     blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha.
 	 blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha blah blah blha.
   </p>
+  Who are they:
+  {{#each model.users as |usr|}}
+	{{usr.name}}<br/>
+  {{/each}}
 </div>
