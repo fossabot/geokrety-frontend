@@ -8,6 +8,7 @@ export default Route.extend({
 	model() {
 		var githubuser = 'kumy'
 		Logger.info('fetch github profile', githubuser);
+		// NO CORS issue with github
 		return fetch('https://api.github.com/users/' +githubuser)
 			.then(function(response) {
 			return response;

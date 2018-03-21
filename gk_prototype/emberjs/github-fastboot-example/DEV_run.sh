@@ -1,2 +1,5 @@
 #!/bin/bash
-ember serve --proxy https://api.geokretymap.org
+# usage : ./DEV_run
+
+ember serve
+# ember serve --proxy https://api.geokretymap.org

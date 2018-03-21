@@ -14,6 +14,7 @@ export default Route.extend({
     // https://api.geokretymap.org/geojson?latTL=45.22922&lonTL=5.78988&latBR=45.1392&lonBR=5.662222&limit=100&daysFrom=0&daysTo=-1
     // lonBR et lonTL inversés // grenoble
     var geojsonUri= "/geojson?latTL=45.22922&lonTL=5.78988&latBR=45.1392&lonBR=5.662222&limit=100&daysFrom=0&daysTo=-1"
+    // requirement: ember serve --proxy https://api.geokretymap.org
 
     Logger.info('fetck geokrets list');
     var gklist = fetch(geojsonUri)
@@ -26,5 +27,6 @@ export default Route.extend({
                         ;
     Logger.info('promise', gklist);
     return gklist;
+
   }
 });

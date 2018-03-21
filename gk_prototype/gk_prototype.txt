@@ -24,7 +24,7 @@ See:
 	ember generate route index
 	update  app/routes/index.js + app/templates/*.hbs
 
-- https://guides.emberjs.com/v3.0.0/tutorial/
+- https://guides.emberjs.com/v3.0.0#tutorial/
 	ember install ember-cli-tutorial-style
 
 - http://www.ember-cli-mirage.com/docs/v0.1.x/installation/ (mock api json)
