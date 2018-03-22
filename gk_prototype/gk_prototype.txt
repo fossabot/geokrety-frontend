@@ -27,8 +27,13 @@ See:
 - https://guides.emberjs.com/v3.0.0#tutorial/
 	ember install ember-cli-tutorial-style
 
-- http://www.ember-cli-mirage.com/docs/v0.1.x/installation/ (mock api json)
-	ember install ember-cli-mirage
+Mock ReST API
+    Local mock
+        - http://www.ember-cli-mirage.com/docs/v0.1.x/installation/ (mock api json)
+	        ember install ember-cli-mirage
+	        npm uninstall ember-cli-mirage --save-dev           // https://emberigniter.com/uninstall-remove-ember-add-on/
+	mock as a service
+	    - https://geokretsapiv2mocks.docs.apiary.io/
 	
 ## CORS issue
 
