@@ -20,7 +20,7 @@ RUN apt-get update
 # RUN certbot --authenticator standalone --installer apache -m boly38@gmail.com --agree-tos --non-interactive || echo force 0 status to continue
 
 
-RUN echo generation des certificats self-signed (DEV)
+RUN echo generation des certificats self-signed DEV
 
 RUN mkdir -p /var/pk 
 RUN chmod 777 /var/pk
