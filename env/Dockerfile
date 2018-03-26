@@ -4,7 +4,7 @@ FROM webdevops/apache:latest
 
 LABEL maintainer="boly38@gmail.com"
 
-RUN echo mise à jour apt
+RUN echo mise a jour apt
 RUN apt-get update
 
 # RUN echo generation des certificats pour apache avec certbot (PROD)

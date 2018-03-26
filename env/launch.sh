@@ -70,5 +70,5 @@ docker-machine scp -r exposed/www/* $MACHINE:/app 2>/dev/null 1>/dev/null || alt
 echo " * Docker compose ($COMPOSE_FILE)"
 docker-compose -f $COMPOSE_FILE up -d --force-recreate || die "compose error"
 
-echo "serving ./exposed/ as http://${GKFRONT_IP}:80/"
-explorer "http://${GKFRONT_IP}:80/"
+echo "serving ./exposed/ as https://${GKFRONT_IP}/"
+explorer "https://${GKFRONT_IP}/" || echo "done" # avoid exit 1 status with explorer
