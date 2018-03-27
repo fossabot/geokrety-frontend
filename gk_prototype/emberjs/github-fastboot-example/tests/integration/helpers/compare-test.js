@@ -8,10 +8,18 @@ module('Integration | Helper | compare', function(hooks) {
 
   // Replace this with your real tests.
   test('it renders', async function(assert) {
-    this.set('inputValue', '1234');
+    this.set('inputValue', 1234);
 
-    await render(hbs`{{compare inputValue}}`);
+    await render(hbs`{{compare inputValue '>' 1230}}`);
 
-    assert.equal(this.element.textContent.trim(), '1234');
+    assert.equal(this.element.textContent.trim(), 'true');
+
+    await render(hbs`{{compare inputValue '<' 1230}}`);
+
+    assert.equal(this.element.textContent.trim(), 'false');
+
+    await render(hbs`{{compare inputValue '==' 1234}}`);
+
+    assert.equal(this.element.textContent.trim(), 'true');
   });
 });
