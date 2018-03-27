@@ -1,8 +1,19 @@
 # GKFrontend prototype(s)
 
+
 ## HowTo run prototype ?
 
-    DEV_run_emberjs.sh
+### setup dependencies
+
+	(prototype dir)/DEV_setup.sh
+
+### run locally using emberjs
+
+    (prototype dir)/DEV_run.sh
+
+### run locally using docker machine and custom apache container
+
+    (root dir)/DEV_run_emberjs.sh
 
 ## EmberJS (emberjs/github-fastboot-example)
 

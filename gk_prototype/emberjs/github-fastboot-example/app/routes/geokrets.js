@@ -32,9 +32,9 @@ export default Route.extend({
     */
 
     // requirement: ember serve --proxy https://private-1b51bc-geokretsapiv2mocks.apiary-mock.com
-    var urlInfo = "https://geokretsapiv2mocks.docs.apiary.io/ :: /api/v1/geokrety-type";
+    var urlInfo = "https://geokretsapiv2mocks.docs.apiary.io/ :: /v1/geokrety-type";
     Logger.info('fetck geokrets list from ' + urlInfo);
-    var gklist = fetch('/api/v1/geokrety-type')
+    var gklist = fetch('/v1/geokrety-type')
                         .then(function(response) {
                                 // Logger.info('response', response);
                                 return response;

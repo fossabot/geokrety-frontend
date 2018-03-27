@@ -4,10 +4,19 @@ function die(){
    exit 1
 }
 
-step="build emberjs/github-fastboot-example"
-echo "* $step"
-cd gk_prototype/emberjs/github-fastboot-example/ && ./DEV_build.sh && cd ../../.. || die "error while $step"
+currentDirectory=$(pwd)
+prototypeDirectory=gk_prototype/emberjs/github-fastboot-example/
 
-step="deploy emberjs/github-fastboot-example"
+# you could uncomment this to execute setup first time 
+# todo: add shell arg to drive that
+# step="setup $prototypeDirectory"
+# echo "* $step"
+# cd "$prototypeDirectory" && ./DEV_setup.sh && cd "$currentDirectory" || die "error while $step"
+
+step="build $prototypeDirectory"
 echo "* $step"
-cd env && ./emberjs_promote.sh && ./launch.sh && cd ../ || die "error while $step"
+cd "$prototypeDirectory" && ./DEV_build.sh && cd "$currentDirectory" || die "error while $step"
+
+step="deploy $prototypeDirectory"
+echo "* $step"
+cd "env/" && ./emberjs_promote.sh && ./launch.sh && cd "$currentDirectory" || die "error while $step"

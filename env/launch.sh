@@ -44,6 +44,16 @@ function die(){
 docker-machine -version || dockerNeeded
 docker-compose -version || dockerNeeded
 
+if [ "$1" == "revert" ]; then 
+	if docker-machine ls | grep $MACHINE ; then
+		echo " * Remove docker machine $MACHINE (you will have to confirm)..."
+		docker-machine rm $MACHINE
+	else
+		echo " * there is no docker machine $MACHINE $revert"
+	fi
+	exit 0
+fi
+
 if ! docker-machine ls | grep --quiet $MACHINE; then
 	echo " * Create docker machine"
     docker-machine create $MACHINE || die "Unable to create machine $MACHINE"
